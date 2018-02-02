@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact/Info</title>
+    <link rel="icon" href="https://credlyapp.s3.amazonaws.com/avatars/0f6c5b703f999746de6676f95f495f54_19.png">
+    <script src = "https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="style/opmaak.css">
+       <script>
+          function loadMap() {
+
+             var mapOptions = {
+                center:new google.maps.LatLng(52.361771,4.918187),
+                zoom:15
+             }
+
+             var map = new google.maps.Map(document.getElementById("metis"),mapOptions);
+
+             var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(52.361771,4.918187),
+                map: map,
+                animation:google.maps.Animation.Drop
+             });
+          }
+       </script>
+  </head>
+  <body onload = "loadMap()">
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    ul:hover { box-shadow: 2px 2px 10px black;
+   }
+    li a:hover {
+        background-color: white;
+        color: black;
+    }
+    </style>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Informatie over billy.html">Informatie</a></li>
+      <li><a href="vragen.html">Vragen</a></li>
+      <li><a href="table.html">Tabel</a></li>
+      <li><a href="lijst.html">Lijst</a></li>
+      <li><a href="over mij.html">Contact/Info</a></li>
+    </ul>
+    <h1>Over mezelf</h1>
+    <h3>Deze website is gemaakt voor een opdracht van Coderclass</h3>
+    <a href="https://www.coderclass.nl">Bezoek de Coderclass website!</a>
+    <div id = "metis" style = "width:370px; height:380px;"></div>
+    <img src="https://coderclass.nl/wp-content/uploads/2016/06/logo_Metis_Coderclass_kleur_LICHT.png" alt="Coderclass" width="500"
+  </body>
+</html>
